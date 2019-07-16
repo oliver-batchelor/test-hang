@@ -11,6 +11,9 @@ reflex-platform.project ({ pkgs, ... }: {
     client = ./client;
     jsaddle = ./jsaddle;
     jsaddle-warp = ./jsaddle-warp;
+    websockets = ./websockets;
+#    wai-websockets = ./wai-websockets;
+#    wai = ./wai;
   };
 
 

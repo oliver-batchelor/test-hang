@@ -8,11 +8,12 @@ import Control.Concurrent.MVar (takeMVar, putMVar, newEmptyMVar)
 import Control.Lens ((^.))
 import Language.Javascript.JSaddle
        (jsg, jsg3, js, js1, jss, fun, valToNumber, syncPoint,
-        nextAnimationFrame, runJSM, askJSM, global, doEnableLogging)
+        nextAnimationFrame, runJSM, askJSM, global)
 import Language.Javascript.JSaddle.Warp (debug)
+import Language.Javascript.JSaddle.Run (enableLogging)
 
 main = debug 3708 $ do
-    doEnableLogging True
+    enableLogging True
     doc <- jsg "document"
     doc ^. js "body" ^. jss "innerHTML" ("<h1>Kia ora (Hi)</h1>")
 

@@ -3,4 +3,7 @@ packages:
   client/
   jsaddle/
   jsaddle-warp/
+  websockets/
+--  wai-websockets/
+--  wai/
 
